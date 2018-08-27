@@ -1,0 +1,10 @@
+How to hack on this:
+
+1. Install ruby, gem, and bundler.
+2. Clone this repo.
+3. Install the dependencies locally:
+   bundle install --path vendor/bundle
+4. Test and serve:
+   bundle exec jekyll serve
+   (useful optional args: --drafts --port 4001)
+
