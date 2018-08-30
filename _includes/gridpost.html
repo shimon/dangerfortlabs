@@ -1,0 +1,15 @@
+---
+layout: default
+title: Gridpost
+permalink: /gridpost
+---
+<div class="row">
+    <div class="col-md-4">
+     {% for post in site.posts %}
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        <p>{{ post.content }}</p>
+        <p><a class="btn btn-secondary" href="{{ post.url }}" role="button">Read more</a></p>
+      </div>
+</div>
